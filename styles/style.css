@@ -10,7 +10,6 @@
     --text-color: #FFB703;
 }
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -44,6 +43,10 @@ header .menu {
     margin-left: auto;
 }
 
+header .menu-largo {
+    display: none;
+}
+
 header .container-menu {
     position: fixed;
     top: 0;
@@ -69,6 +72,7 @@ header .menu-header h1 {
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
+    text-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.404);
 }
 
 header .menu-header span {
@@ -81,13 +85,13 @@ header .menu ul li {
     list-style: none;
 }
 
-header .menu nav {
+header .menu .container-menu nav {
     height: 100%;
     width: 220px;
     background-color: white;
 }
 
-header .menu nav a {
+header .menu .container-menu nav a {
     display: block;
     font-size: 17px;
     color: black;
@@ -96,13 +100,13 @@ header .menu nav a {
     
 }
 
-header .menu ul li a {
+header .menu .container-menu ul li a {
     display: block;
     text-decoration: none;
     color: black;
 }
 
-header .menu nav a:hover {
+header .menu .container-menu nav a:hover {
     background-color: #0230476a;
     transition: background-color .4s linear;
     cursor: pointer;
@@ -155,14 +159,13 @@ header .menu span:active {
     left: 0;
     height: 100%;
     max-width: 500px;
-    min-width: 450px;
 
     padding: 20px;
     z-index: 9;
 }
 
 .text > h2 {
-    color: var(--secondary-color);
+    color: orange;
     margin: 20px 0 0 0;
 }
 
