@@ -124,7 +124,7 @@ header .menu span:active {
 }
 
 .section-img {
-    height: 250px;
+    height: 220px;
     width: 100%;
     background-color: #80CED8;
 }
@@ -166,7 +166,7 @@ header .menu span:active {
 }
 
 .text > p {
-    font: normal 400 16px 'Poppins', sans-serif;
+    font: normal 14px 'Poppins', sans-serif;
     color: black;
 }
 
@@ -178,7 +178,8 @@ header .menu span:active {
     var(--text-color) 100%);
 
     color: white;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 15px;
     padding: 8px 20px;
     border-radius: 8px;
     text-decoration: none;
