@@ -1,6 +1,14 @@
 @media screen and (min-width: 620px) and (max-width: 992px) {
+    .section-img {
+        box-shadow: 0px 7px 40px 4px rgba(0, 0, 0, 0.267);
+    }
+
     .section-img .img {
         opacity: 1;
+    }
+
+    main {
+        width: min(90%, 800px);
     }
 }
 
@@ -10,7 +18,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        background-color: transparent;
+        background-color: white;
         height: 50px;
         position: relative;
     }
@@ -19,6 +27,13 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    header .menu-largo {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
     }
 
     header .menu #menu-icon {
@@ -53,8 +68,8 @@
         transform: scale(1.2);
     }
 
-    header .menu .menu-largo .nav-larga .especial:active {
-        transform: scale(0.8);
+    header .menu .menu-largo .nav-larga ul .especial:active {
+        transform: scaleX(0.8);
         transition: scale .4s ease-in;
     }
 

@@ -18,9 +18,14 @@
 
 body {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #80ced837;
+}
+
+p {
+    font: normal 14px 'Poppins', sans-serif;
+    line-height: 1.4em;
 }
 
 header {
@@ -31,6 +36,7 @@ header {
     background-color: transparent;
     height: 50px;
     position: relative;
+    background-color: white;
 }
 
 header .logo {
@@ -75,10 +81,17 @@ header .menu-header h1 {
     text-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.404);
 }
 
-header .menu-header span {
+header .bg-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
     cursor: pointer;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 header .menu ul li {
@@ -114,16 +127,15 @@ header .menu .container-menu nav a:hover {
 }
 
 header .menu span {
-    padding: 3px;
+    padding: 5px;
 }
 
-header .menu span:hover {
+header .bg-span:hover {
     background-color: #02304760;
-    border-radius: 5px;
     cursor: pointer;
 }
 
-header .menu span:active {
+header .menu .bg-span:active .span-global {
     transform: scaleX(0.6);
 }
 
@@ -160,7 +172,7 @@ header .menu span:active {
     height: 100%;
     max-width: 500px;
 
-    padding: 20px;
+    padding: 20px 35px;
     z-index: 9;
 }
 
@@ -170,8 +182,6 @@ header .menu span:active {
 }
 
 .text > p {
-    font: normal 14px 'Poppins', sans-serif;
-    color: black;
     margin-bottom: 10px;
 }
 
@@ -199,4 +209,21 @@ header .menu span:active {
 .text > .btn:active {
     transform: scale(0.9);
     transition: scale .4s ease-in;
+}
+
+main {
+    max-width: 800px;
+    padding: 15px 30px;
+    background-color: white;
+    margin: 0px auto;
+}
+
+main h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+main p {
+    text-align: justify;
+    line-height: 1.4em;
 }
