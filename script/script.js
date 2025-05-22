@@ -24,19 +24,19 @@ window.addEventListener('scroll', function() {
         }
 });
 
+function closeMenu() {
+    container.style.animation = "fadeOut 0.5s forwards";
+    setTimeout(() => {
+        container.style.display = "none";
+    }, 500);
+}
+
 menu.addEventListener("click", () => { 
     container.style.display = "flex"; 
     container.style.animation = "fadeIn 0.5s forwards";
 })
 
-closer.addEventListener("click", () => {
-    container.style.animation = "fadeOut 0.5s forwards";
-    container.style.display = "none";
-}) 
+closer.addEventListener("click", closeMenu);
 
-document.addEventListener("click", (Event) => {
-    if (!container.contains(Event.target) && !closer.contains(Event.target)) {
-        container.style.display = 'none';
-        container.style.animation = "fadeOut 0.5s forwards";
-    }
-});
+container.addEventListener("click", closeMenu)
+
