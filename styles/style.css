@@ -39,12 +39,6 @@ header {
     background-color: white;
 }
 
-header .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 header .menu {
     margin-left: auto;
 }
@@ -148,7 +142,7 @@ header .menu .bg-span:active .span-global {
 .controlador {
     position: relative;
     height: 100%;
-    max-width: 650px;
+    max-width: 660px;
     margin: 0 auto;
 }
 
@@ -171,14 +165,17 @@ header .menu .bg-span:active .span-global {
     left: 0;
     height: 100%;
     max-width: 500px;
-
-    padding: 20px 35px;
+    padding: 20px;
     z-index: 9;
 }
 
 .text > h2 {
+    font-size: 1.4em;
     color: orange;
-    margin: 20px 0 0 0;
+    margin: 20px 0 10px 0;
+    padding: 0px 35px 0px 5px;
+    background: linear-gradient(to right, #02304756, transparent);
+    border-radius: 4px;
 }
 
 .text > p {
@@ -226,4 +223,49 @@ main h2 {
 main p {
     text-align: justify;
     line-height: 1.4em;
+}
+
+.cont-phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+
+    height: 70px;
+    width: 230px;
+
+    padding: 0px 30px;
+
+    border-radius: 100px;
+    background-color: var(--secondary-color);
+    clip-path: circle(18% at 84% 50%);
+}
+
+.cont-phone:hover {
+    clip-path: circle(100% at 50% 50%);
+    height: 40px;
+    bottom: 30px;
+    transition: clip-path .3s ease-in;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.436);
+}
+
+.cont-phone:active {
+    transform: scale(0.9);
+    transition: scale .3s ease-in;
+}
+
+.cont-phone p {
+    color: white;
+    font: normal 16px 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cont-phone span {
+    font-size: 1.3em;
+    color: white;
+    margin-top: 7px;
 }

@@ -1,4 +1,4 @@
-@media screen and (min-width: 620px) and (max-width: 992px) {
+@media screen and (min-width: 620px) and (max-width: 800px) {
     .section-img {
         box-shadow: 0px 7px 40px 4px rgba(0, 0, 0, 0.267);
     }
@@ -12,7 +12,7 @@
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) and (max-width: 992px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -25,8 +25,16 @@
 
     header .logo {
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        padding-left: 20px;
+    }
+
+    .controlador {
+        max-width: 800px;
+    }
+
+    .text {
+        padding: 20px 0px;
     }
 
     header .menu-largo {
@@ -58,22 +66,89 @@
 
     .especial {
         background-color: var(--text-color);
-        padding: 8px 12px;
+        padding: 3px 10px;
         border-radius: 5px;
+        transition: transform .4s ease-in; /* Adicione esta linha */
+    }
+    .especial a {
+        text-decoration: none;
+        color: black;
     }
 
     .especial:hover {
         opacity: 0.8;
         cursor: pointer;
-        transform: scale(1.2);
     }
 
-    header .menu .menu-largo .nav-larga ul .especial:active {
-        transform: scaleX(0.8);
-        transition: scale .4s ease-in;
+    .especial:active {
+        transform: scale(0.8);
     }
 
     .section-img .img {
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header .menu-largo {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+
+    header .menu #menu-icon {
+        display: none;
+    }
+
+    header .menu-largo {
+        display: inline;
+
+    }
+
+    .nav-larga ul li {
+        display: inline;
+        height: 100%;
+        margin-left: 10px;
+    }
+
+    .normal:hover {
+        color: var(--text-color);
+        cursor: pointer;
+    }
+
+    .especial {
+        background-color: var(--text-color);
+        padding: 3px 10px;
+        border-radius: 5px;
+        transition: transform .4s ease-in; /* Adicione esta linha */
+    }
+    .especial a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .especial:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .especial:active {
+        transform: scale(0.8);
+    }
+
+    .section-img .img {
+        opacity: 1;
+    }
+    .controlador {
+        max-width: 800px;
+    }
+    
+    .text {
+        padding: 20px 0px;
+    }
+
+    .section-img .img {
+        background-image: url(../assets/images/);
     }
 }

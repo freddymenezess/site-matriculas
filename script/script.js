@@ -19,8 +19,13 @@ window.addEventListener('scroll', function() {
             header.style.backgroundColor = "white";
             header.style.position = "relative";
             logo.style.position = "absolute";
-            logo.style.left = "50%";
-            logo.style.transform = "translateX(-50%)";
+            if (menu.style.display == "block") {
+                logo.style.left = "50%";
+                logo.style.transform = "translateX(-50%)";
+            } else {
+                logo.style.left = "0";
+                logo.style.transform = "translateX(-0)";
+            }
         }
 });
 
