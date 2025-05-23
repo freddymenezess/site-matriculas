@@ -5,27 +5,16 @@ const logo = document.getElementById("logo");
 
 window.addEventListener('scroll', function() {
     const header = document.getElementById('header');
-        if (window.scrollY > 280) {
-            header.style.backgroundColor = "#80CED8";
+        if (window.scrollY > 0) {
+            header.style.backgroundColor = "#219EBC";
             header.style.position = "fixed";
             header.style.width = "100%";
             header.style.top = "-1";
-            header.style.transition = "position 0.5s linear, background-color 0.3s linear";
-            logo.style.position = "static";
-            logo.style.top = "-1";
-            logo.style.left = "0";
-            logo.style.transform = "translateX(0)";
+            header.style.transition = "position 0.2s linear, background-color 0.3s linear";
         } else {
             header.style.backgroundColor = "white";
-            header.style.position = "relative";
-            logo.style.position = "absolute";
-            if (menu.style.display == "block") {
-                logo.style.left = "50%";
-                logo.style.transform = "translateX(-50%)";
-            } else {
-                logo.style.left = "0";
-                logo.style.transform = "translateX(-0)";
-            }
+            header.style.position = "static";
+            header.style.top = "0";
         }
 });
 

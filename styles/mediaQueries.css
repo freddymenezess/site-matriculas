@@ -1,25 +1,30 @@
-@media screen and (min-width: 620px) and (max-width: 800px) {
+@media screen and (min-width: 620px) and (max-width: 820px) {
+    header .menu .container-menu nav {
+        width: 300px;
+    }
+
+    .controlador {
+        max-width: 800px;
+    }
+
     .section-img {
+        background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--text-color) 100%);
         box-shadow: 0px 7px 40px 4px rgba(0, 0, 0, 0.267);
     }
 
     .section-img .img {
         opacity: 1;
     }
-
-    main {
-        width: min(90%, 800px);
-    }
 }
 
-@media screen and (min-width: 800px) and (max-width: 992px) {
+@media screen and (min-width: 820px) and (max-width: 992px) {
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
         background-color: white;
-        height: 50px;
+        height: 70px;
         position: relative;
     }
 
@@ -31,10 +36,6 @@
 
     .controlador {
         max-width: 800px;
-    }
-
-    .text {
-        padding: 20px 0px;
     }
 
     header .menu-largo {
@@ -49,30 +50,41 @@
     }
 
     header .menu-largo {
-        display: inline;
+        display: inline-block;
 
     }
 
-    .nav-larga ul li {
-        display: inline;
-        height: 100%;
-        margin-left: 10px;
+    .section-img {
+        background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--text-color) 100%);
+        box-shadow: 0px 7px 40px 4px rgba(0, 0, 0, 0.267);
+    }
+
+    .section-img .img {
+        background-image: url(../assets/images/students.png);
+        background-size: contain;
+        background-position: right bottom;
+    }
+
+    .nav-larga a {
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
     }
 
     .normal:hover {
+        padding-bottom: 21px;
         color: var(--text-color);
+        border-bottom: 2px solid var(--text-color);
         cursor: pointer;
     }
 
     .especial {
+        display: inline-block;
         background-color: var(--text-color);
-        padding: 3px 10px;
+        padding: 8px 20px;
         border-radius: 5px;
-        transition: transform .4s ease-in; /* Adicione esta linha */
-    }
-    .especial a {
-        text-decoration: none;
-        color: black;
+        transition: transform .2s linear;
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.267);
     }
 
     .especial:hover {
@@ -106,35 +118,46 @@
 
     }
 
-    .nav-larga ul li {
-        display: inline;
-        height: 100%;
-        margin-left: 10px;
+    .nav-larga a {
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
     }
 
     .normal:hover {
+        padding-bottom: 21px;
         color: var(--text-color);
+        border-bottom: 2px solid var(--text-color);
         cursor: pointer;
     }
 
     .especial {
+        display: inline-block;
         background-color: var(--text-color);
-        padding: 3px 10px;
+        padding: 8px 20px;
         border-radius: 5px;
-        transition: transform .4s ease-in; /* Adicione esta linha */
-    }
-    .especial a {
-        text-decoration: none;
-        color: black;
+        transition: transform .2s linear;
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.267);
     }
 
     .especial:hover {
         opacity: 0.8;
-        cursor: pointer;
+        transform: scale(1.02);
     }
 
     .especial:active {
         transform: scale(0.8);
+    }
+
+    .section-img {
+        background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--text-color) 100%);
+        box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.267);
+    }
+
+    .section-img .img {
+        background-image: url(../assets/images/pngstudents.png);
+        background-size: contain;
+        background-position: right bottom;
     }
 
     .section-img .img {
@@ -146,9 +169,5 @@
     
     .text {
         padding: 20px 0px;
-    }
-
-    .section-img .img {
-        background-image: url(../assets/images/);
     }
 }
