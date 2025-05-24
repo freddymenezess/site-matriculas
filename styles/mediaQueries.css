@@ -9,7 +9,7 @@
 
     .section-img {
         background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--text-color) 100%);
-        box-shadow: 0px 7px 40px 4px rgba(0, 0, 0, 0.267);
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.267);
     }
 
     .section-img .img {
@@ -38,25 +38,17 @@
         max-width: 800px;
     }
 
-    header .menu-largo {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-    }
-
-    header .menu #menu-icon {
+    header .menu .bg-span {
         display: none;
     }
 
     header .menu-largo {
         display: inline-block;
-
     }
 
     .section-img {
         background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--text-color) 100%);
-        box-shadow: 0px 7px 40px 4px rgba(0, 0, 0, 0.267);
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.267);
     }
 
     .section-img .img {
@@ -79,21 +71,7 @@
     }
 
     .especial {
-        display: inline-block;
         background-color: var(--text-color);
-        padding: 8px 20px;
-        border-radius: 5px;
-        transition: transform .2s linear;
-        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.267);
-    }
-
-    .especial:hover {
-        opacity: 0.8;
-        cursor: pointer;
-    }
-
-    .especial:active {
-        transform: scale(0.8);
     }
 
     .section-img .img {
@@ -102,20 +80,35 @@
 }
 
 @media screen and (min-width: 992px) {
-    header .menu-largo {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding: 20px;
+        background-color: white;
+        height: 70px;
+        position: relative;
     }
 
-    header .menu #menu-icon {
+    h2 {
+        font-size: 1.7em;
+    }
+
+    .text > h2 {
+        font-size: 2em;
+    } 
+
+    p {
+        font-size: 16px;
+    }
+
+    header .menu .bg-span {
         display: none;
     }
 
     header .menu-largo {
-        display: inline;
-
+        display: inline-block;
     }
 
     .nav-larga a {
@@ -125,7 +118,7 @@
     }
 
     .normal:hover {
-        padding-bottom: 21px;
+        padding-bottom: 24px;
         color: var(--text-color);
         border-bottom: 2px solid var(--text-color);
         cursor: pointer;
@@ -134,24 +127,11 @@
     .especial {
         display: inline-block;
         background-color: var(--text-color);
-        padding: 8px 20px;
-        border-radius: 5px;
-        transition: transform .2s linear;
-        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.267);
-    }
-
-    .especial:hover {
-        opacity: 0.8;
-        transform: scale(1.02);
-    }
-
-    .especial:active {
-        transform: scale(0.8);
     }
 
     .section-img {
         background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--text-color) 100%);
-        box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.267);
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.267);
     }
 
     .section-img .img {
@@ -169,5 +149,9 @@
     
     .text {
         padding: 20px 0px;
+    }
+
+    .text > .btn {
+        font-size: 16px;
     }
 }

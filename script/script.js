@@ -9,7 +9,7 @@ window.addEventListener('scroll', function() {
             header.style.backgroundColor = "#219EBC";
             header.style.position = "fixed";
             header.style.width = "100%";
-            header.style.top = "-1";
+            header.style.top = "0";
             header.style.transition = "position 0.2s linear, background-color 0.3s linear";
         } else {
             header.style.backgroundColor = "white";
