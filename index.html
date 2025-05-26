@@ -3,42 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/animation.css">
-    <link rel="stylesheet" href="styles/mediaQueries.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/mediaQueries.css">
+    <link rel="stylesheet" href="src/styles/animation.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Matriculas Online</title>
 </head>
 <body>
     <header id="header">
-        <div class="logo" id="logo" onclick="window.location.href='index.html'">
-            <span class="material-symbols-outlined book">dictionary</span>
-            <p>school of knowledge</p>
+        <div class="logo" id="logo" title="Página inicial" onclick="window.location.href='index.html'">
+            <p>SCK</p>
         </div>
         <div class="menu">
-            <div class="bg-span">
                 <span class="material-symbols-outlined span-global" id="menu-icon">menu</span>
-            </div>
             <div class="menu-largo">
-                <nav class="nav-larga">
+                <nav class="nav-larga" id="nav-larga">
                     <a href="#" class="normal">Início</a>
                     <a href="#" class="normal">Sobre</a>
                     <a href="#" class="normal">Contactos</a>
-                    <a href="#" class="especial btn">Matricule-se</a>
+                    <a href="#" class="especial btn" title="Faça a sua matrícula">Matricule-se</a>
                 </nav>
             </div>
             <div class="container-menu" id="container-menu">
                 <div class="menu-visivel">
-                    <nav>
+                    <nav id="nav-escondida">
                         <div class="menu-header">
                             <h1>Menu</h1>
-                            <div class="bg-span"><span class="material-symbols-outlined span-global" id="close-icon">close</span></div>
+                            <span class="material-symbols-outlined span-global" id="close-icon">close</span>
                         </div>
                         <ul>
                             <li><a href="#">Início</a></li>
                             <li><a href="#">Sobre</a></li>
                             <li><a href="#">Contato</a></li>
-                            <li><a href="#">Matricule-se</a></li>
+                            <li><a href="#" title="Faça a sua matrícula">Matricule-se</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -56,15 +54,70 @@
         </div>
     </section>
     <main>
-        <h2>Formação</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates at earum sapiente tempore autem praesentium, id nulla, veritatis, iusto repellat quae dolorem architecto itaque aspernatur veniam similique eius error quas!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi harum ducimus deleniti delectus. Quasi esse nemo id labore nisi possimus enim aut. Deleniti libero architecto blanditiis rem, officiis aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nesciunt! Ab vel, officia debitis aperiam quasi eius suscipit excepturi? Quo a error quidem saepe fugit odio eius tenetur illo dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque et a explicabo enim. Nesciunt expedita similique fugiat, tempore alias possimus nulla adipisci explicabo? Sint nisi dolorum facilis reiciendis voluptas rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quae saepe doloremque rem hic facilis fugit inventore, commodi repellendus sapiente, unde ea explicabo officia accusamus praesentium ab laborum quod provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus adipisci cumque autem pariatur! Iste earum labore mollitia ab provident, deleniti culpa ut quibusdam assumenda, odio accusamus commodi, sapiente illo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex vitae velit, quam optio consequuntur dolorum impedit illum reprehenderit temporibus aliquid atque. Vel, eius. Eaque, quaerat fugiat labore sed hic eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quae, facere dicta, aliquam, ipsam debitis amet culpa voluptas sit ab excepturi laborum consequatur repellat quia quidem accusamus blanditiis suscipit dolorum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi harum ducimus deleniti delectus. Quasi esse nemo id labore nisi possimus enim aut. Deleniti libero architecto blanditiis rem, officiis aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nesciunt! Ab vel, officia debitis aperiam quasi eius suscipit excepturi? Quo a error quidem saepe fugit odio eius tenetur illo dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et a explicabo enim. Nesciunt expedita similique fugiat, tempore alias possimus nulla adipisci explicabo? Sint nisi dolorum facilis reiciendis voluptas rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quae saepe doloremque rem hic facilis fugit inventore, commodi repellendus sapiente, unde ea explicabo officia accusamus praesentium ab laborum quod provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus adipisci cumque autem pariatur! Iste earum labore mollitia ab provident, deleniti culpa ut quibusdam assumenda, odio accusamus commodi, sapiente illo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex vitae velit, quam optio consequuntur dolorum impedit illum reprehenderit temporibus aliquid atque. Vel, eius. Eaque, quaerat fugiat labore sed hic eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quae, facere dicta, aliquam, ipsam debitis amet culpa voluptas sit ab excepturi laborum consequatur repellat quia quidem accusamus blanditiis suscipit dolorum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi harum ducimus deleniti delectus. Quasi esse nemo id labore nisi possimus enim aut. Deleniti libero architecto blanditiis rem, officiis aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nesciunt! Ab vel, officia debitis aperiam quasi eius suscipit excepturi? Quo a error quidem saepe fugit odio eius tenetur illo dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et a explicabo enim. Nesciunt expedita similique fugiat, tempore alias possimus nulla adipisci explicabo? Sint nisi dolorum facilis reiciendis voluptas rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quae saepe doloremque rem hic facilis fugit inventore, commodi repellendus sapiente, unde ea explicabo officia accusamus praesentium ab laborum quod provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus adipisci cumque autem pariatur! Iste earum labore mollitia ab provident, deleniti culpa ut quibusdam assumenda, odio accusamus commodi, sapiente illo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex vitae velit, quam optio consequuntur dolorum impedit illum reprehenderit temporibus aliquid atque. Vel, eius. Eaque, quaerat fugiat labore sed hic eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quae, facere dicta, aliquam, ipsam debitis amet culpa voluptas sit ab excepturi laborum consequatur repellat quia quidem accusamus blanditiis suscipit dolorum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi harum ducimus deleniti delectus. Quasi esse nemo id labore nisi possimus enim aut. Deleniti libero architecto blanditiis rem, officiis aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nesciunt! Ab vel, officia debitis aperiam quasi eius suscipit excepturi? Quo a error quidem saepe fugit odio eius tenetur illo dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et a explicabo enim. Nesciunt expedita similique fugiat, tempore alias possimus nulla adipisci explicabo? Sint nisi dolorum facilis reiciendis voluptas rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quae saepe doloremque rem hic facilis fugit inventore, commodi repellendus sapiente, unde ea explicabo officia accusamus praesentium ab laborum quod provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus adipisci cumque autem pariatur! Iste earum labore mollitia ab provident, deleniti culpa ut quibusdam assumenda, odio accusamus commodi, sapiente illo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex vitae velit, quam optio consequuntur dolorum impedit illum reprehenderit temporibus aliquid atque. Vel, eius. Eaque, quaerat fugiat labore sed hic eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quae, facere dicta, aliquam, ipsam debitis amet culpa voluptas sit ab excepturi laborum consequatur repellat quia quidem accusamus blanditiis suscipit dolorum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi harum ducimus deleniti delectus. Quasi esse nemo id labore nisi possimus enim aut. Deleniti libero architecto blanditiis rem, officiis aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nesciunt! Ab vel, officia debitis aperiam quasi eius suscipit excepturi? Quo a error quidem saepe fugit odio eius tenetur illo dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque et a explicabo enim. Nesciunt expedita similique fugiat, tempore alias possimus nulla adipisci explicabo? Sint nisi dolorum facilis reiciendis voluptas rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quae saepe doloremque rem hic facilis fugit inventore, commodi repellendus sapiente, unde ea explicabo officia accusamus praesentium ab laborum quod provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus adipisci cumque autem pariatur! Iste earum labore mollitia ab provident, deleniti culpa ut quibusdam assumenda, odio accusamus commodi, sapiente illo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex vitae velit, quam optio consequuntur dolorum impedit illum reprehenderit temporibus aliquid atque. Vel, eius. Eaque, quaerat fugiat labore sed hic eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quae, facere dicta, aliquam, ipsam debitis amet culpa voluptas sit ab excepturi laborum consequatur repellat quia quidem accusamus blanditiis suscipit dolorum.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi harum ducimus deleniti delectus. Quasi esse nemo id labore nisi possimus enim aut. Deleniti libero architecto blanditiis rem, officiis aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nesciunt! Ab vel, officia debitis aperiam quasi eius suscipit excepturi? Quo a error quidem saepe fugit odio eius tenetur illo dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque et a explicabo enim. Nesciunt expedita similique fugiat, tempore alias possimus nulla adipisci explicabo? Sint nisi dolorum facilis reiciendis voluptas rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quae saepe doloremque rem hic facilis fugit inventore, commodi repellendus sapiente, unde ea explicabo officia accusamus praesentium ab laborum quod provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus adipisci cumque autem pariatur! Iste earum labore mollitia ab provident, deleniti culpa ut quibusdam assumenda, odio accusamus commodi, sapiente illo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex vitae velit, quam optio consequuntur dolorum impedit illum reprehenderit temporibus aliquid atque. Vel, eius. Eaque, quaerat fugiat labore sed hic eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quae, facere dicta, aliquam, ipsam debitis amet culpa voluptas sit ab excepturi laborum consequatur repellat quia quidem accusamus blanditiis suscipit dolorum.</p>
+        <section class="form caixa">
+            <h2>Formação</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates at earum sapiente tempore autem praesentium, id nulla, veritatis, iusto repellat quae dolorem architecto itaque aspernatur veniam similique eius error quas!</p>
+        </section>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi harum ducimus deleniti delectus. Quasi esse nemo id labore nisi possimus enim aut. Deleniti libero architecto blanditiis rem, officiis aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nesciunt! Ab vel, officia debitis aperiam quasi eius suscipit excepturi? Quo a error quidem saepe fugit odio eius tenetur illo dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque et a explicabo enim. Nesciunt expedita similique fugiat, tempore alias possimus nulla adipisci explicabo? Sint nisi dolorum facilis reiciendis voluptas rem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quae saepe doloremque rem hic facilis fugit inventore, commodi repellendus sapiente, unde ea explicabo officia accusamus praesentium ab laborum quod provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus adipisci cumque autem pariatur! Iste earum labore mollitia ab provident, deleniti culpa ut quibusdam assumenda, odio accusamus commodi, sapiente illo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex vitae velit, quam optio consequuntur dolorum impedit illum reprehenderit temporibus aliquid atque. Vel, eius. Eaque, quaerat fugiat labore sed hic eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quae, facere dicta, aliquam, ipsam debitis amet culpa voluptas sit ab excepturi laborum consequatur repellat quia quidem accusamus blanditiis suscipit dolorum.</p>
+        <section id="cursos" class="caixa">
+            <h2>Cursos</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="curso">
+                            <div class="img">
+                                <img src="assets/images/courses/devweb.jpg" alt="Curso de Programação">
+                            </div>
+                            <h3>Programação</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nostrum obcaecati praesentium vel doloribus alias quisquam quis harum voluptatibus eum tempore voluptatem! Eum temporibus nostrum esse? Voluptatibus dignissimos obcaecati at.</p>
+                            <a href="#" class="btn">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="curso">
+                            <div class="img">
+                                <img src="assets/images/courses/arquitetura.jpg" alt="Curso de Programação">
+                            </div>
+                            <h3>Arquitetura</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea tempora dolores, officia culpa voluptas cumque impedit! Excepturi, debitis fugit officiis accusamus sint laboriosam nisi consectetur, maxime accusantium nemo cumque et!</p>
+                            <a href="#" class="btn">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="curso">
+                            <div class="img">
+                                <img src="assets/images/courses/eletricidade.jpg" alt="Curso de Programação">
+                            </div>
+                            <h3>Eletricidade</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea tempora dolores, officia culpa voluptas cumque impedit! Excepturi, debitis fugit officiis accusamus sint laboriosam nisi consectetur, maxime accusantium nemo cumque et!</p>
+                            <a href="#" class="btn">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="curso">
+                            <div class="img">
+                                <img src="assets/images/courses/mecanico.jpg" alt="Curso de Programação">
+                            </div>
+                            <h3>Mecânica</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea tempora dolores, officia culpa voluptas cumque impedit! Excepturi, debitis fugit officiis accusamus sint laboriosam nisi consectetur, maxime accusantium nemo cumque et!</p>
+                            <a href="#" class="btn">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="curso">
+                            <div class="img">
+                                <img src="assets/images/courses/quimica.jpg" alt="Curso de Programação">
+                            </div>
+                            <h3>Química</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea tempora dolores, officia culpa voluptas cumque impedit! Excepturi, debitis fugit officiis accusamus sint laboriosam nisi consectetur, maxime accusantium nemo cumque et!</p>
+                            <a href="#" class="btn">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
     </main>
     <div class="cont-phone">
         <div>
@@ -78,6 +131,8 @@
             </span>
         </div>
     </div>
-    <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/script/swiper.js"></script>
+    <script src="src/script/script.js"></script>
 </body>
 </html>

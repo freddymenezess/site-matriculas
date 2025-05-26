@@ -1,0 +1,355 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #008bfd;
+    --secondary-color: rgb(53, 207, 66);
+    --accent-color: #023047;
+    --background-color: #80CED8;
+    --text-color: #FFB703;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #cee9ff80;
+}
+
+p {
+    font: normal 14px 'Poppins', sans-serif;
+    line-height: 1.4em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 70px;
+    z-index: 10;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+header .logo:hover {
+    cursor: pointer;
+}
+
+header .logo > p {
+    display: inline;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+header .menu {
+    margin-left: auto;
+}
+
+header .menu-largo {
+    display: none;
+}
+
+header .container-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: none;
+    justify-content: flex-end; 
+}
+
+header .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+header .menu-header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.404);
+}
+
+header .bg-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+header .menu ul li {
+    list-style: none;
+}
+
+header .menu .container-menu nav {
+    height: 100%;
+    width: 220px;
+    background-color: white;
+}
+
+header .menu .container-menu nav a {
+    display: block;
+    font-size: 17px;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+header .menu .container-menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+header .menu .container-menu nav a:hover {
+    background-color: #008bfd88;
+    transition: background-color .4s linear;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header .menu .span-global {
+    font-size: 1.6em;
+    padding: 6px;
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+header .span-global:hover {
+    background-color: #008bfd42;
+    cursor: pointer;
+}
+
+header .menu .span-global:active {
+    transform: scaleX(0.6);
+}
+
+.section-img {
+    height: 270px;
+    width: 100%;
+}
+
+.controlador {
+    position: relative;
+    height: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.section-img .img {
+    position: absolute;
+    top: 0;
+    right: 0;   
+    height: 100%;
+    width: min(700px, 60%);
+    z-index: 8;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 500px;
+    padding: 20px;
+    z-index: 9;
+}
+
+.text > h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin: 20px 0 10px 0;
+    border-radius: 4px;
+}
+
+.text > p {
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all .2s linear;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.text > .btn {
+    background-color: var(--primary-color);
+
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px 3px #008bfd9a;
+    margin-top: 10px;
+}
+
+.text > .btn:hover {
+    box-shadow: 0px 0px 20px 5px #008bfd9a;
+}
+    
+main {
+    width: min(800px, 100%);
+    margin: 20px auto;
+}
+    
+main h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+main p {
+    line-height: 1.4em;
+}
+
+.cont-phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    
+    height: 70px;
+    width: 230px;
+
+    padding: 0px 30px;
+
+    border-radius: 100px;
+    background-color: var(--primary-color);
+    clip-path: circle(18% at 84% 50%);
+    
+    transition: all .3s linear;
+    z-index: 1000;
+}
+
+.cont-phone:hover {
+    clip-path: circle(100% at 50% 50%);
+    height: 40px;
+    bottom: 30px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.436);
+    cursor: pointer;
+}
+
+.cont-phone:active {
+    transform: scale(0.9);
+}
+
+.cont-phone p {
+    color: white;
+    font: normal 16px 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cont-phone span {
+    font-size: 1.3em;
+    color: white;
+    margin-top: 7px;
+}
+
+.caixa {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0 0 0;
+}
+
+.swiper {
+    width: min(780px, 90%);
+    position: relative;
+    margin: auto;
+}
+
+.curso {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    background-color: #cee9ff80;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: black;
+    border: 2px solid var(--primary-color);
+}
+
+.swiper-wrapper {
+    overflow: hidden;
+    margin: 0 50px 20px 50px;
+}
+
+.curso .img {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.curso > h3 {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: rgb(255, 185, 54);
+    border-radius: 50px;
+    padding: 10px 15px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.curso > p {
+    height: 60px;
+    font-size: 13px;
+    margin: 10px 0;
+    overflow: hidden;
+    color: black;
+}
+
+.curso img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.curso > .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-left: calc(50% - 53.615px);
+    background-color: var(--primary-color);
+    bottom: 15px;
+}
